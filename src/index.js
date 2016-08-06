@@ -402,8 +402,8 @@ var ANSWER_COUNT = 4,
 
 function getWelcomeResponse(callback) {
     var sessionAttributes = {},
-        cardTitle = "Children's Bible Quiz",
-        speechOutput = "Children's Bible Quiz. I will ask you " + GAME_LENGTH.toString() 
+        cardTitle = "M Squared's Bible Quiz",
+        speechOutput = "M Squared's Bible Quiz. I will ask you " + GAME_LENGTH.toString() 
             + " questions, try to get as many right as you can. Just say the number of the answer. Let's begin",
         shouldEndSession = false,
 
@@ -465,7 +465,7 @@ function populateRoundAnswers(gameQuestions, index, correctAnswer) {
 }
 
 function handleAnswerRequest(intent, session, callback) {
-    var cardTitle = "Children's Bible Quiz",
+    var cardTitle = "M Squared's Bible Quiz",
         speechOutput = "";
 
     var answerSlot = intent.slots.Answer;
